@@ -125,7 +125,7 @@ const LogIn = () => {
            if(userData.email !== data.email || userData.password !== data.password){
              seterrorBoxDisplay(true);
            }else{
-            history.push('/home');
+            history.push('/postsgram/home');
            }
         }
     }
@@ -145,7 +145,7 @@ const LogIn = () => {
             <div className='row'>
                 <div id='signUpFormHeader' className='col-12'>
                     <div id='imgBrandNameContainer'>
-                       <Link to='/'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
+                       <Link to='/postsgram'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
                         <span id='brandName'>Postsgram</span>
                     </div>
                     <p id='signUpFormTitleText'>Log In</p>
@@ -164,7 +164,7 @@ const LogIn = () => {
                             <input onChange={setData} onBlur={checkIndividualValueValidation} name='password' type="password" className="form-control" id="exampleInputPassword1" placeholder="Create password here" />
                             <div className="validationMessage" id="userPasswordValidationMessage">{errorMessage.passwordMessage}</div>
                         </div>
-                        <button type="submit" className='btns'>LogIn</button><span id="loginQuestion">Are you a new user?</span><Link to="/signup" id="loginLink">Sign Up</Link>
+                        <button type="submit" className='btns'>LogIn</button><span id="loginQuestion">Are you a new user?</span><Link to="/postsgram/signup" id="loginLink">Sign Up</Link>
                     </form>
                     {/* Error display box */}
                     {

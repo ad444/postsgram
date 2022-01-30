@@ -27,7 +27,7 @@ const Dashboard = () => {
             <i onClick={goBack} id='backArrow' className='fas fa-arrow-left'></i>
             <div id='dashboardHeader' className='col-12'>
                 <div id='imgBrandNameContainer'>
-                    <Link to='/'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
+                    <Link to='/postsgram'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
                     <span id='brandName'>Postsgram</span>
                 </div>
                 <p id='welcomeText'>Check out all the posts</p>

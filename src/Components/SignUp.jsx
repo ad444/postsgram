@@ -161,7 +161,7 @@ const SignUp = () => {
              seterrorBoxDisplay(true);
            }else{
             localStorage.setItem('user', JSON.stringify(data));
-            history.push('/home');
+            history.push('/postsgram/home');
            }
         }
     }
@@ -180,7 +180,7 @@ const SignUp = () => {
             <div className='row'>
                 <div id='signUpFormHeader' className='col-12'>
                     <div id='imgBrandNameContainer'>
-                        <Link to='/'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
+                        <Link to='/postsgram'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
                         <span id='brandName'>Postsgram</span>
                     </div>
                     <p id='signUpFormTitleText'>SignUp</p>
@@ -204,7 +204,7 @@ const SignUp = () => {
                             <input onChange={setData} onBlur={checkIndividualValueValidation} name='password' type="password" className="form-control" id="exampleInputPassword1" placeholder="Create password here" />
                             <div className="validationMessage" id="userPasswordValidationMessage">{errorMessage.passwordMessage}</div>
                         </div>
-                        <button type="submit" className='btns'>Sign Up</button><span id="loginQuestion">Already a user?</span><Link to="/login" id="loginLink">Log In</Link>
+                        <button type="submit" className='btns'>Sign Up</button><span id="loginQuestion">Already a user?</span><Link to="/postsgram/login" id="loginLink">Log In</Link>
                     </form>
                     {/* Error display box */}
                     {

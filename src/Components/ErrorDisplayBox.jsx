@@ -8,7 +8,7 @@ const ErrorDisplayBox = (props) => {
                 props.closeDisplayBox();
             }}></i>
             <p id="errorMessage">{props.message}
-              <br/>Please <Link style={{cursor:'pointer'}} to={`/${props.navigate}`}>{props.navigate}</Link>
+              <br/>Please <Link style={{cursor:'pointer'}} to={`/postsgram/${props.navigate}`}>{props.navigate}</Link>
             </p>
         </div>
     )
