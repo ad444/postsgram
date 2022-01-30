@@ -9,7 +9,7 @@ const KYC = () => {
 
         const connectWithBlockpass = () => {
             try{
-            const blockpass = new BlockpassKYCConnect(
+            const blockpass = new window.BlockpassKYCConnect(
                 'testing_491a8',
                 {
                     env: 'prod',

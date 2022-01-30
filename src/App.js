@@ -12,22 +12,22 @@ const App = () => {
     <div id='main' className='container-fluid'>
       <Router>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/postsgram'>
             <Index />
           </Route>
-          <Route exact path='/signup'>
+          <Route exact path='/postsgram/signup'>
             <SignUp />
           </Route>
-          <Route exact path='/login'>
+          <Route exact path='/postsgram/login'>
             <LogIn />
           </Route>
-          <Route exact path='/home'>
+          <Route exact path='/postsgram/home'>
             <Home />
           </Route>
-          <Route exact path='/dashboard'>
+          <Route exact path='/postsgram/dashboard'>
             <Dashboard />
           </Route>
-          <Route exact path='/kyc'>
+          <Route exact path='/postsgram/kyc'>
             <KYC />
           </Route>
         </Switch>
