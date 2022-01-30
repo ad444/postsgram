@@ -1,0 +1,12 @@
+html, body{
+    height:100%;
+}
+#main{
+    background-color:#f7f7f7;
+    border:none;
+    border-bottom:10px solid;
+    border-image: linear-gradient(to right, #32fc97, #3fc8f2, #1f9cc2);
+    border-image-slice: 1;
+    position:absolute;
+    height:100%;
+  }

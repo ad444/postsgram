@@ -1,0 +1,50 @@
+#dashboardHeader{
+    margin-top: 30px;
+}
+#postsContainer{
+    margin-top: 20px;
+}
+#postCard{
+    height:300px;
+    border:1px solid #dbdbdb;
+    border-radius: 3px;
+    padding:0;
+    margin:20px auto;
+    overflow: hidden;
+    transition:all 0.3s;
+}
+#postCard:hover{
+    height:400px;
+    transform: scale(1.1,1.1);
+    z-index:1;
+}
+.postCardImageContainer{
+    width:100%;
+    height:40%;
+}
+.postCardImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.postCardContent{
+    width:100%;
+    height:60%;
+    background-image: linear-gradient(to right, #32fc97, #3fc8f2, #1f9cc2);
+    color: #000000;
+    box-sizing:border-box;
+}
+.postTitle{
+    padding:10px;
+    padding-bottom: 0px;
+    margin:0px;
+}
+.postDescription{
+    height:50%;
+    padding:10px;
+    padding-top: 0px;
+    margin:0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
