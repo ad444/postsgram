@@ -157,7 +157,7 @@ const SignUp = () => {
 
         if(nameerror === false && emailerror === false && passworderror === false){
            let userData = JSON.parse(localStorage.getItem('user'));
-           if(userData.email === data.email){
+           if(userData.email !== null && userData.email === data.email){
              seterrorBoxDisplay(true);
            }else{
             localStorage.setItem('user', JSON.stringify(data));
