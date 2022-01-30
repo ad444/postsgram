@@ -157,11 +157,14 @@ const SignUp = () => {
 
         if(nameerror === false && emailerror === false && passworderror === false){
            let userData = JSON.parse(localStorage.getItem('user'));
-           if(userData.email !== null && userData.email === data.email){
+           if(userData.email === null){
+            localStorage.setItem('user', JSON.stringify(data));
+            history.push('/postsgram/home');
+           }else if(userData.email === data.email){
              seterrorBoxDisplay(true);
            }else{
             localStorage.setItem('user', JSON.stringify(data));
-            history.push('/postsgram/home');
+            history.push('/postsgram/home');  
            }
         }
     }
