@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import logo from '../Images/logo.png';
-import Dashboard from '../Images/dashboard.jpg';
-import KYC from '../Images/KYC.jpg';
+import dashboard from '../Images/dashboard.jpg';
+import kyc from '../Images/kyc.jpg';
 import '../CSS/home.css';
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
               <Link className='routingLinks' to='/postsgram/dashboard'>
                 <p className='cardTitle'>Dashboard</p>
                 <div className='cardImgContainer'>
-                    <img src={Dashboard} alt="dashboard_image" />
+                    <img src={dashboard} alt="dashboard_image" />
                 </div>
               </Link>
             </div>
@@ -39,7 +39,7 @@ const Home = () => {
               <Link className='routingLinks' to='/postsgram/kyc'>
                 <p className='cardTitle'>KYC</p>
                 <div className='cardImgContainer'>
-                    <img src={KYC} alt="KYC_image" />
+                    <img src={kyc} alt="KYC_image" />
                 </div>
               </Link>
             </div>

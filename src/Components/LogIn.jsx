@@ -123,7 +123,9 @@ const LogIn = () => {
             
            let userData = JSON.parse(localStorage.getItem('user'));
            
-           if(userData.email !== data.email || userData.password !== data.password || userData === null){
+           if(userData === null){
+            seterrorBoxDisplay(true);
+           }else if(userData.email !== data.email || userData.password !== data.password){
                 seterrorBoxDisplay(true);
            }else{
             history.push('/postsgram/home');

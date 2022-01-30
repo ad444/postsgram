@@ -157,7 +157,7 @@ const SignUp = () => {
 
         if(nameerror === false && emailerror === false && passworderror === false){
            let userData = JSON.parse(localStorage.getItem('user'));
-           if(userData.email === null){
+           if(userData === null){
             localStorage.setItem('user', JSON.stringify(data));
             history.push('/postsgram/home');
            }else if(userData.email === data.email){
