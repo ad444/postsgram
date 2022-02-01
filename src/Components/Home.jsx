@@ -16,7 +16,7 @@ const Home = () => {
         <div className='row'>
          <i onClick={goBack} id='backArrow' className='fas fa-arrow-left'></i>
             <div id='homeHeader' className='col-12'>
-              <BrandImgNameContainer text='Welcome' userName={JSON.parse(localStorage.getItem('user')).name}/>
+              <BrandImgNameContainer text='Welcome,' userName={JSON.parse(localStorage.getItem('user')).name + '!'}/>
             </div>
         </div>
         <div className='row'>

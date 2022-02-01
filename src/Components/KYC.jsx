@@ -46,7 +46,7 @@ const KYC = () => {
                     <BrandImgNameContainer text='Complete Your KYC' userName={JSON.parse(localStorage.getItem('user')).name}/>
                 </div>
             </div>
-            <button className='kycBtn' id="blockpass-kyc-connect" onClick={connectWithBlockpass}>Complete Your KYC</button>
+            <button className='kycBtn btns' id="blockpass-kyc-connect" onClick={connectWithBlockpass}>Complete Your KYC</button>
             <p id='kycPageGoBackLink'>
               <span onClick={goBack}>Go Back</span>
             </p>

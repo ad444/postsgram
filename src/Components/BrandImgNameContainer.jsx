@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png';
 
@@ -14,4 +14,4 @@ const BrandImgNameContainer = (props) => {
     )
 };
 
-export default BrandImgNameContainer;
+export default memo(BrandImgNameContainer);

@@ -4,6 +4,7 @@ import '../CSS/dashboard.css';
 import PostCard from './PostCard';
 import axios from 'axios';
 import BrandImgNameContainer from './BrandImgNameContainer';
+import Spinner from './Spinner';
 
 const baseURL = 'https://jsonplaceholder.typicode.com/posts/';
 
@@ -12,10 +13,15 @@ const Dashboard = () => {
 
     const [posts, setPosts] = useState([]);
 
+    //loading spinner
+    const [loading, setLoading] = useState(true);
+
     useEffect(()=>{
        axios.get(baseURL).then((response)=>{
-           console.log(response.data);
            setPosts(response.data);
+           setLoading(false);
+       }).catch((err)=>{
+           console.log(err);
        })
     }, []);
 
@@ -38,6 +44,10 @@ const Dashboard = () => {
             }
            
         </div>
+        {
+            loading === true && <Spinner />
+        }
+        
       </>
   )
 };
