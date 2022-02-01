@@ -39,7 +39,7 @@ const Dashboard = () => {
         <div id='postsContainer' className='row'>
             {
                posts.map((elem, index)=>{
-                   return <PostCard key={index} title={elem.title} description={elem.body}/>
+                   return <PostCard key={elem.id} title={elem.title} description={elem.body}/>
                })
             }
            
