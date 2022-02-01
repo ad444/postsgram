@@ -1,8 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import {Link} from 'react-router-dom';
-import logo from '../Images/logo.png';
 import '../CSS/kyc.css';
+import BrandImgNameContainer from './BrandImgNameContainer';
 const KYC = () => {
 
     let history = useHistory();
@@ -44,11 +43,7 @@ const KYC = () => {
             <div className='row'>
             <i onClick={goBack} id='backArrow' className='fas fa-arrow-left'></i>
                 <div id='dashboardHeader' className='col-12'>
-                    <div id='imgBrandNameContainer'>
-                        <Link to='/postsgram'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
-                        <span id='brandName'>Postsgram</span>
-                    </div>
-                    <p id='kycText'>Complete Your KYC {JSON.parse(localStorage.getItem('user')).name}</p>
+                    <BrandImgNameContainer text='Complete Your KYC' userName={JSON.parse(localStorage.getItem('user')).name}/>
                 </div>
             </div>
             <button className='kycBtn' id="blockpass-kyc-connect" onClick={connectWithBlockpass}>Complete Your KYC</button>

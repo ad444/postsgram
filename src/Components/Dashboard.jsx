@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useHistory} from 'react-router-dom';
-import logo from '../Images/logo.png';
+import {useHistory} from 'react-router-dom';
 import '../CSS/dashboard.css';
 import PostCard from './PostCard';
 import axios from 'axios';
+import BrandImgNameContainer from './BrandImgNameContainer';
+
 const baseURL = 'https://jsonplaceholder.typicode.com/posts/';
 
 const Dashboard = () => {
@@ -26,11 +27,7 @@ const Dashboard = () => {
         <div className='row'>
             <i onClick={goBack} id='backArrow' className='fas fa-arrow-left'></i>
             <div id='dashboardHeader' className='col-12'>
-                <div id='imgBrandNameContainer'>
-                    <Link to='/postsgram'><img id='brandLogo' src={logo} alt="brand_logo" /></Link>
-                    <span id='brandName'>Postsgram</span>
-                </div>
-                <p id='welcomeText'>Check out all the posts</p>
+                <BrandImgNameContainer text='Check out all the posts'/>
             </div>
         </div>
         <div id='postsContainer' className='row'>

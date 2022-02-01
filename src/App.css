@@ -11,6 +11,25 @@
     overflow-y: auto;
     height:100%;
   }
+  #imgBrandNameContainer{
+    display:inline-block;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+    margin-bottom:20px;
+  }
+  #brandName{
+    font-size: 32px;
+    position: relative;
+    top:7.5px;
+    margin-left:10px;
+  }
+  #welcomeText{
+    text-align: center;
+    margin-top:10px;
+    font-size: 18px;
+    font-weight: 550;
+  }
   .btns{
     width:120px;
     height:40px;
